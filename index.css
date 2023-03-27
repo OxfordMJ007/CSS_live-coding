@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2f2f2f;
+    padding: 100px;
+}
+
+/* container and boxes */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    row-gap: 10px;
+    column-gap: 20px;
+    width: 100%;
+}
+.box{
+    color: white;
+    background-color: #71ff4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 15vw;
+
+}
+.box1:hover {
+    animation: box1 1s;
+}
+.box2:hover{
+    animation: box2 1s;
+}
+.box3:hover {
+    animation: box3 1s;
+}
+.box4:hover{
+    animation: box4 1s;
+}
+.box5:hover {
+    animation: box5 1s;
+}
+.box6:hover{
+    animation: box6 1s;
+}
+.box7:hover {
+    animation: box7 1s;
+}
+.box8:hover{
+    animation: box8 1s;
+}
+.box9:hover {
+    animation: box9 1s;
+}
+.box10:hover {
+    animation: box10 1s;
+}
+
+/* animation */
+@keyframes box1{
+
+    100%{
+        transform: translateX(10px);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box2 {
+    100%{
+        transform: translateX(-10px);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box3 {
+    100%{
+        transform: translateY(-10px);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box4 {
+    100%{
+        transform: translateY(10px);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box5 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.5,1.5);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box6 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,0.5);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box7 {
+    100%{
+        border-radius: 50%;
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box8 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.5,1);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box9 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,1.5);
+        background-color: rgb(247, 76, 76);
+    }
+}
+@keyframes box10 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+        background-color: rgb(247, 76, 76);
+    }
+}
+
+/* Media Query */
+@media only screen and(max-width: 340px) {
+    .box{
+        color: red;
+    }
+}
